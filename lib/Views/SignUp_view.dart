@@ -159,6 +159,10 @@ class _SignUpState extends State<SignUp> {
                         onTap: () {
                           if (_formkey.currentState!.validate()) {
                             void login;
+                            Navigator.push(
+                                context,
+                                MaterialPageRoute(
+                                    builder: (context) => Homepage()));
                           }
                         },
                       ),
